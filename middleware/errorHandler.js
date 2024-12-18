@@ -2,7 +2,7 @@
 
 const {errorTypes} = require('../errorTypes');
 const errorHandler = (err, req, res, next) => {
-    statusCode = res.statusCode ? res.statusCode : 500;
+    statusCode = res.statusCode || 500;
     switch(statusCode) {
         case errorTypes.ValidationError:
             res.json({

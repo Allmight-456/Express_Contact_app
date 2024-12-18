@@ -3,8 +3,9 @@ const express = require('express');
 const router = express.Router();
 
 const { getContacts, createContacts, getContacts_byID, updateContacts, deleteContacts } = require('../controllers/contactController');
+const validateTokenHandler = require('../middleware/validateTokenHandler');
 
-
+router.use(validateTokenHandler);
 // router.route('/').get(getContacts);
 // router.route('/').post(createContacts);
 //or
