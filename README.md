@@ -1,4 +1,4 @@
-# Express Contact App
+# SecureBook 
 
 An Express-based Contact Application that provides a RESTful API for managing a contact database and user authentication. This project leverages MongoDB for data persistence, JWT for secure user authentication, and bcrypt for password hashing.
 
